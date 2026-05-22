@@ -162,7 +162,7 @@ export default function ResumeChatbot() {
     return () => { if (idleRef.current) clearTimeout(idleRef.current); };
   }, [msgs]);
 
-  async function send(text) {
+  async function send(text: string = "") {
     const q = text || inp.trim();
     if (!q || busy) return;
     setInp("");
