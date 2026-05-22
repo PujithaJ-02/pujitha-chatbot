@@ -134,9 +134,9 @@ export default function ResumeChatbot() {
   const [typedText, setTypedText] = useState("");
   const [showIdle, setShowIdle] = useState(false);
   const [greeting] = useState(() => GREETINGS[Math.floor(Math.random() * GREETINGS.length)]);
-  const endRef = useRef(null);
-  const inputRef = useRef(null);
-  const idleRef = useRef(null);
+  const endRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
+  const idleRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => { endRef.current?.scrollIntoView({ behavior: "smooth" }); }, [msgs, busy]);
 
