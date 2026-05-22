@@ -128,7 +128,7 @@ const GREETINGS = [
 ];
 
 export default function ResumeChatbot() {
-  const [msgs, setMsgs] = useState([]);
+  const [msgs, setMsgs] = useState<{role: string; content: string}[]>([]);
   const [inp, setInp] = useState("");
   const [busy, setBusy] = useState(false);
   const [typedText, setTypedText] = useState("");
