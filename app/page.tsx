@@ -191,7 +191,7 @@ export default function ResumeChatbot() {
   }
 
   return (
-    <div style={{ display:"flex", height:"100vh", background:"#fdfcff", overflow:"hidden", fontFamily:"'Inter', system-ui, sans-serif" }}>
+    <div style={{ display:"flex", flexDirection:"column", height:"100vh", background:"#fdfcff", overflow:"hidden", fontFamily:"'Inter', system-ui, sans-serif" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap');
         *{box-sizing:border-box;margin:0;padding:0}
@@ -238,9 +238,25 @@ export default function ResumeChatbot() {
         .sb2{width:42px;height:42px;border-radius:50%;background:#7c5cbf;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .15s,transform .1s}
         .sb2:hover{background:#6b4aad}.sb2:active{transform:scale(.93)}
         .sb2:disabled{background:#d4bef7;cursor:not-allowed}
-        @media(max-width:600px){.sb{display:none}}
+        @media(max-width:600px){.sb{display:none}.mob{display:flex!important}}
       `}</style>
 
+      <div className="mob" style={{display:"none",background:"#f3eeff",borderBottom:"1px solid #e2d4f0",padding:"12px 16px",alignItems:"center",gap:"12px",flexShrink:0}}>
+        <div style={{width:"44px",height:"44px",borderRadius:"50%",overflow:"hidden",border:"2px solid #7c5cbf",flexShrink:0}}>
+          <img src={PHOTO} alt="Pujitha" style={{width:"100%",height:"100%",objectFit:"cover"}}/>
+        </div>
+        <div style={{flex:1,minWidth:0}}>
+          <div style={{fontFamily:"'Playfair Display',serif",fontSize:"16px",color:"#2a1a4e",fontWeight:600}}>Pujitha Jujjarapu</div>
+          <div style={{fontSize:"10px",color:"#9b82c4",letterSpacing:"0.06em",textTransform:"uppercase",marginTop:"2px"}}>ML · AI Engineer · Data Scientist</div>
+        </div>
+        <div style={{display:"flex",gap:"6px"}}>
+          <a href="https://mail.google.com/mail/?view=cm&to=pujithajujjarapu2002@gmail.com&su=Let's connect" target="_blank" rel="noreferrer" style={{background:"#7c5cbf",color:"#fff",fontSize:"11px",padding:"6px 10px",borderRadius:"8px",textDecoration:"none",fontFamily:"'Inter',sans-serif",whiteSpace:"nowrap"}}>Email</a>
+          <a href="https://github.com/PujithaJ-02" target="_blank" rel="noreferrer" style={{background:"transparent",color:"#7c5cbf",fontSize:"11px",padding:"6px 10px",borderRadius:"8px",textDecoration:"none",border:"1px solid #d4bef7",fontFamily:"'Inter',sans-serif"}}>GitHub</a>
+          <a href="https://www.linkedin.com/in/pujitha-jujjarapu/" target="_blank" rel="noreferrer" style={{background:"transparent",color:"#7c5cbf",fontSize:"11px",padding:"6px 10px",borderRadius:"8px",textDecoration:"none",border:"1px solid #d4bef7",fontFamily:"'Inter',sans-serif"}}>LinkedIn</a>
+        </div>
+      </div>
+
+      <div style={{display:"flex",flex:1,overflow:"hidden"}}>
       <aside className="sb">
         <div className="phw"><img src={PHOTO} alt="Pujitha" /></div>
         <div className="nm">Pujitha Jujjarapu</div>
@@ -362,6 +378,7 @@ export default function ResumeChatbot() {
           </button>
         </div>
       </main>
+      </div>
     </div>
   );
 }
