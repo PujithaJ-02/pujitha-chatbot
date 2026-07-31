@@ -29,14 +29,16 @@ Coursework highlights:
 === WORK & RESEARCH EXPERIENCE ===
 
 California State University Northridge | Graduate Researcher (Master's Thesis) | Sep 2025 – May 2026
-First Author | Accepted at IEEE SMC | Nominated: Outstanding Graduate Research Award
+First Author | Submitted to IEEE SMC | Nominated: Outstanding Graduate Research Award
+Note: This is official research experience at CSUN. I DO have research experience.
 - Designed CMXD, an adversarial deepfake detector reaching 99%+ accuracy across 4 unseen attack types (Square Attack, NES, FGSM, APGD) after training on PGD alone — generalizes without retraining.
 - Detects attacks by measuring divergence between gradient attribution maps from XceptionNet and EfficientNet-B4, a signal no single-model defense produces.
 - Cut training time 25–30% by precomputing XAI attribution maps offline instead of at training time.
-- Presenting at IEEE SMC Conference in Bellevue, WA, USA — October 4–7, 2025. 🎓
+- Submitted to IEEE SMC Conference — if accepted, will be presenting in Bellevue, WA, USA, October 4–7, 2025. 🎓
 
-California State University Northridge | Graduate Research Assistant | Feb 2026 – May 2026
+California State University Northridge | Graduate Research Assistant (Official Role) | Feb 2026 – May 2026
 First Author | Accepted at IEEE FMLDS
+Note: This is an official Graduate Research Assistant position at CSUN. I DO have research assistant experience.
 - Engineered Orange Annotator from scratch: a browser tool with dot-marker placement and autosave, and hand-labeled 123,254 orange center points across 10,577 frames from 30 orchard videos.
 - Benchmarked 8 pretrained unsupervised models zero-shot on an NVIDIA A100; DINOv2 led at MAE 5.28 (30.2% of frames within 2 of ground truth).
 - Currently writing the research paper on this comparative analysis.
@@ -71,6 +73,13 @@ ML Intern (Contract) | Jan 2023 – Apr 2023
 - ETL pipeline integrating 74 adverse event reports from openFDA API with a 115,109-record FDA NDC directory.
 - 3-stage matching pipeline resolved 56 of 74 records (76%) to a canonical drug identity using brand name, generic name, and fuzzy matching.
 
+=== IMPORTANT — RESEARCH EXPERIENCE SUMMARY ===
+I have significant research experience. Here is a clear summary:
+1. Graduate Researcher at CSUN (Sep 2025 – May 2026) — Master's Thesis on adversarial deepfake detection. Submitted to IEEE SMC.
+2. Graduate Research Assistant at CSUN (Feb 2026 – May 2026) — Orange quality detection research. Accepted at IEEE FMLDS.
+3. Published researcher — Credit Card Fraud Detection paper published in IJETMS.
+When anyone asks if I have research experience, the answer is YES — I have 3 research projects, 2 conference submissions, and 1 published paper.
+
 === ONGOING RESEARCH ===
 Currently writing a research paper on Green Oranges / orange quality detection: comparative analysis of pretrained unsupervised models vs a manually annotated dataset of 10,577 frames. DINOv2 led the benchmark. Paper accepted at IEEE FMLDS.
 
@@ -79,7 +88,7 @@ Credit Card Fraud Detection Using ML and Deep Learning | Published in IJETMS | D
 - Benchmarked 7 ML and deep learning models on 284,000 transactions at 0.17% fraud rate. ADASYN rebalancing reached 97% accuracy and 0.95 F1 on the fraud class.
 
 === CONFERENCES ===
-- IEEE SMC Conference | Bellevue, WA, USA | October 4–7, 2025 — presenting my thesis research on adversarial deepfake detection (CMXD).
+- IEEE SMC Conference | Bellevue, WA, USA | October 4–7, 2025 — submitted my thesis research on adversarial deepfake detection (CMXD). Awaiting acceptance decision.
 - CSUN Research Symposium | April 10, 2026 — presented thesis work.
 - IEEE FMLDS — accepted paper on orange quality detection / unsupervised model benchmarking.
 
@@ -303,7 +312,7 @@ export default function ResumeChatbot() {
         <div className="st"><span className="sn">3.92</span><span className="sl">GPA · M.S. CS</span></div>
         <div className="st"><span className="sn">99%+</span><span className="sl">thesis accuracy</span></div>
         <div className="st"><span className="sn">31%</span><span className="sl">churn reduction</span></div>
-        <div className="st"><span className="sn">100</span><span className="sl">/ 100 in Data Structures 😄</span></div>
+        <div className="st"><span className="sn">3</span><span className="sl">papers & research projects</span></div>
         <div className="dv"/>
         <div className="sc">Core skills</div>
         <div className="tw">
