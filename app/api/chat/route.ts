@@ -1,3 +1,13 @@
+const cors = {
+  "Access-Control-Allow-Origin": "*", // test with * first, then tighten (see note below)
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+};
+
+export async function OPTIONS() {
+  return new Response(null, { status: 204, headers: cors });
+}
+
 export async function POST(req: Request) {
   const { messages, system } = await req.json();
   const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
@@ -16,5 +26,5 @@ export async function POST(req: Request) {
     }),
   });
   const data = await res.json();
-  return Response.json(data);
+  return Response.json(data, { headers: cors });
 }
