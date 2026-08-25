@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       "Authorization": `Bearer ${process.env.GROQ_API_KEY}`,
     },
     body: JSON.stringify({
-      model: "qwen-qwen3-32b",
+      model: "qwen/qwen3-32b",
       max_tokens: 800,
       messages: [
         { role: "system", content: system },
