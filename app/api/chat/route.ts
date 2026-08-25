@@ -14,10 +14,10 @@ export async function POST(req: Request) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${process.env.GROQ_API_KEY}`,
+      "Authorization": `Bearer ${process.env.GROQ_API_KEY ?? ""}`,
     },
     body: JSON.stringify({
-      model: "qwen/qwen3-32b",
+      model: "openai/gpt-oss-20b",
       max_tokens: 800,
       messages: [
         { role: "system", content: system },
@@ -26,5 +26,5 @@ export async function POST(req: Request) {
     }),
   });
   const data = await res.json();
-  return Response.json(data, { headers: cors });
+  return Response.json(data);
 }
